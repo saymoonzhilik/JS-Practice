@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Object</title>
+</head>
+<body>
+    
+    <!--  -->
+    <script>
+        var zhilik ={
+            name: 'saymoon zhilik',  //etakei ami Fname or Lname hishebeo nite pari. Jemon
+            name2: { // 2nd way
+                fname: 'saymoon',
+                lname: 'zhilik',
+            },
+            age: 23,
+            study: 'Bsc Engineering',
+            isgirl: true,
+            phone: '01727-314713',
+            aim: 'web developer',
+        }
+       // document.write(zhilik['name']+" <br> "+zhilik['name2']['fname']+"<br>"+zhilik['age']+"<br><br>"); // problem: duita nam eksathe dekha jay na jemon fname,laname
+       
+        // colo onnovabe ektu print kore dekhi
+        document.write(
+            'First Name='+zhilik['name2']['fname']+"<br>"+
+            'Last Name='+zhilik['name2']['lname']
+        )
+   </script>
+</body>
+</html>
