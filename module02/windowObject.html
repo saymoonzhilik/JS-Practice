@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Window Object Practice</title>
+</head>
+<body>
+    
+    <!-- kisu important window object holo:
+        1. alert() - jeta alert box show korbe ok button er sathe
+        2. confirm() - eta ekta dialog box show korbe jekhane ok and cancel button thakbe[user ok dile true, cancel dile false] 
+        3. prompt() - ei method user theke browser e input ney
+        4. open() - notun tab open kore
+            open diye kaj korar jonne age ekta BUTTON thaka dorkar
+        5. close() - current tab ta ke close kore
+            close diye kaj korar jonne age ekta BUTTON thaka dorkar
+        6. setTimeout - jekono kaj k ekta time diye show korano jay. jemon ami ei window ta reload deyar 10s pore show korabo
+    
+    -->
+
+    <button onclick="demo()">click on me for open a new tab</button>
+
+    <script>
+        // alert("hello I'm a bigginer alert box");
+        // confirm('if you agree then press OK to confirm this order! ore CANCEL it');
+        // prompt("tell me what you want to input for your ambission");
+
+
+        
+        // function demo() {
+        //     open();
+        // }
+
+
+
+        // function demo() {
+        //     close();
+        // }
+
+
+        function demo() {
+            setTimeout(function(){
+                alert("after 10s");
+            },5000);
+        }
+
+
+    </script>
+</body>
+</html>
