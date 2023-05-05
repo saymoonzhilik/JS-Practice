@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+    <title>Javascript Events</title>
+</head>
+<body onscroll="demo()">
+    <!-- Javascript e kisu events ase
+        1. onclick - eta button e set korle, sei button k click korlei kaj korbe
+        2. ondblclick - dui click e kaj korbe
+        3. oncontextmenu - Right button click korlei kaj korbe
+        4. onmouseenter - Etar kaj suru hobe hover korle
+        5. onmouseout - eta khub mojar :) jokhon eta set kora hoy click ba hover kisutei kaj kore na
+            kintu mouse ta btn er upor theke soralei kaj korbe 
+        6. onmousedown - khub beshi changes nei click er motoi kaj kore
+        7. onmouseup - no 6 er motoi
+        8. onkeypress - eta sudhu body ba input box ei kaj kore [keyboard er j kono key te press korlei kaj hobe]
+        9. onresize - etao 8 er moton [kintu browser resize korte hobe, mane minimize theke barano komano]
+        10. onscroll - etao 8 er moton [scroll korle kaj korbe]
+        11. onload - etao 8 er moton [browser load dilei kaj hobe]
+    -->
+    
+    <button onclick="demo()">Click koro</button>
+    <button ondblclick="demo()">Double Click koro</button>
+    <button oncontextmenu="demo()">Right button click koro</button>
+    <button onmouseenter="demo()">Mouse ta hover koro</button>
+    <button onmouseout="demo()">Mouse out</button>
+    <button onmousedown="demo()">Mouse down koro</button>
+    <button onmouseup="demo()">Mouse up koro</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        enim nam saepe ipsam ad. Voluptatibus, libero.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        enim nam saepe ipsam ad. Voluptatibus, libero
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        Ipsa, quibusdam. Maxime saepe neque ullam quidem
+        autem eaque voluptas perspiciatis minima sed, accusantium 
+        dicta aut consectetur, labore quia assumenda optio maiores 
+        ipsum architecto doloremque quam placeat officia. Illum saepe
+        nostrum voluptates incidunt, quidem vel doloremque magni asperiores maxime
+        dolorum, iure ipsam tempore repellat facilis aspernatur magnam dolores repellendus expedita
+        esse eos consequuntur inventore provident?
+        Consectetur inventore amet est distinctio doloremque
+        molestiae quidem soluta debitis, neque officiis incidunt iure
+        nam magnam quas tempora dolore, maxime voluptatibus
+        ipsa magni at, ratione vero laborum similique! Pariatur velit
+        enim nam saepe ipsam ad. Voluptatibus, libero</p>
+
+    <script>
+        function demo(){
+            document.write("E bar bujhso click korle ki hoy!");
+        }
+        
+    </script>
+</body>
+</html>
