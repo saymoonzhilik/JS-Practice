@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Ajax</title>
+</head>
+<body>
+    
+    <!-- Ajax ta asole ki?
+        Eta holo JS er ekta feature. Stand for: AJAX = Asynchronous JavaScript and XML.
+        Eta ekta website ke fast kore pashapashi dynamic korte sahajjo kore.
+
+        Ajax er ekta core property ba adi property bolte paro.. seta holo
+        === XMLHttpRequest ===
+        Eta diye server e request pathano hoy.
+
+        Kintu eta onek age use kora hoto. Ekhon same kaj kore kintu onno nam er property 
+        cole eshese.
+
+        Segulo holo 
+        === Build in Fetch ===
+        === Package Axios ===
+        ===================================================
+    -->
+
+    <!-- ok to ami ekhon ajax diye server e request pathabo.
+        surute html e ekta button niye nibo jar funtion name dibo.. getRequest()
+    -->
+
+    <button onclick="GetRequest()">Click Here</button>
+
+
+    <script>
+        // ekhon getRequest er moddhe ki activities hobe ta likhbo
+
+        function GetRequest(){
+            var URL="https://crud.teamrabbil.com/api/v1/ReadProduct";  //kon url e req pathabo
+            var Config={method: 'GET'}  //ekhon configuration korbo
+
+            fetch(URL,Config) // XMLHttpRequest ba fetch diye req kora jay. Tai ami fetch use korsi
+                .then(response=>response.json) // link pathale to ekta response dey r ki site open hoy
+                .then(result=>console.log(result)) // ja kisu ekta result show kore site e naki?
+                .catch(err=>console.log(err)) // etotuk obdi kono error hole ta err ei tar maddhome show korbe
+        }
+    </script>
+</body>
+</html>

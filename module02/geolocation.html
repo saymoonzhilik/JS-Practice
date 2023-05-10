@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Geolocation</title>
+</head>
+<body>
+   
+    <script>
+        navigator.geolocation.getCurrentPosition(function(position){
+           var altitude = position.coords.altitude;
+           var latitude = position.coords.latitude;
+           var longitude = position.coords.longitude;
+           var speed = position.coords.speed;
+
+           document.write(altitude+"<br>");
+           document.write(latitude+"<br>");
+           document.write(longitude+"<br>");
+           document.write(speed+"<br>");
+        })
+    </script>
+</body>
+</html>

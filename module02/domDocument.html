@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Dom Document</title>
+</head>
+<body>
+
+   <p></p>
+   <p></p>
+   <p></p>
+   <p></p>
+   <button onclick="demo()">Click</button>
+
+    <script>
+        function demo(){
+            // var info = document.cookie; // browser e cookie thakle ta dekha jabe r ki details
+            // var info = document.domain; //domain name dekhabe
+            // var info = document.lastModified; // ami code e kobe last modified korsi ta dekhabe
+            // var info = document.title; // current file e title name dekhabe
+            // var info = document.URL; // browser url show korbe
+
+            // document.getElementsByTagName("p")[0].innerHTML=info; 
+
+
+
+
+
+
+            // ekhon replace kora sikhbo - replace korte hole 3 ta kaj kora lage. open-write-close
+            
+            /*document.open('text/html' ,' replace');
+            document.write('<h1>ei likha tai replace koro</h1>');
+            document.close();*/
+            
+            
+            
+            
+            
+            // ekta lekha to replace korbo seta replace hobw notun ekta tab ba window er vitor
+
+            /* var win = window.open();
+            win.document.open();
+            win.document.write("<h1>ei message ta replace koro kintu notun window te</h1>");
+            win.document.close(); */
+
+
+
+
+
+            // koyta elements ase ta count korbo kivabe. dhoro p tag koyta ase ta gonona korbo
+            var ptaglist = document.getElementsByTagName('p');
+            var ptagcount= ptaglist.length;
+            alert(ptagcount);
+
+
+
+
+        }
+    </script>
+</body>
+</html>
